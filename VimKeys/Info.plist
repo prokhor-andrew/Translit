@@ -20,14 +20,11 @@
 	<string>0.1</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>LSApplicationCategoryType</key>
-	<string>public.app-category.utilities</string>
 	<key>LSUIElement</key>
 	<true/>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 
-	<!-- IMK registration -->
 	<key>InputMethodConnectionName</key>
 	<string>VimKeys_Connection</string>
 	<key>InputMethodServerControllerClass</key>
@@ -35,30 +32,36 @@
 	<key>InputMethodServerDelegateClass</key>
 	<string>VimInputController</string>
 
-	<!-- Input source registration with the Text Services Manager -->
 	<key>TISInputSourceID</key>
 	<string>com.vimkeys.inputmethod</string>
+	<key>TICapsLockLanguageSwitchCapable</key>
+	<false/>
 
 	<key>ComponentInputModeDict</key>
 	<dict>
 		<key>tsInputModeListKey</key>
 		<dict>
-			<key>com.vimkeys.inputmethod</key>
+			<key>com.vimkeys.inputmethod.vim</key>
 			<dict>
 				<key>TISInputSourceID</key>
-				<string>com.vimkeys.inputmethod</string>
-				<!-- mul = multiple/all languages -->
+				<string>com.vimkeys.inputmethod.vim</string>
 				<key>TISIntendedLanguage</key>
-				<string>mul</string>
+				<string>en</string>
 				<key>tsInputModeIsVisibleKey</key>
 				<true/>
 				<key>tsInputModePrimaryInScriptKey</key>
-				<true/>
+				<false/>
+				<key>tsInputModeScriptKey</key>
+				<string>smRoman</string>
+				<key>tsInputMethodCharacterRepertoireKey</key>
+				<array>
+					<string>Latn</string>
+				</array>
 			</dict>
 		</dict>
 		<key>tsVisibleInputModeOrderedArrayKey</key>
 		<array>
-			<string>com.vimkeys.inputmethod</string>
+			<string>com.vimkeys.inputmethod.vim</string>
 		</array>
 	</dict>
 </dict>
