@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundleDisplayName</key>
+	<string>VimKeys</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.utilities</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+
+	<!-- IMK registration -->
+	<key>InputMethodConnectionName</key>
+	<string>VimKeys_Connection</string>
+	<key>InputMethodServerControllerClass</key>
+	<string>VimInputController</string>
+	<key>InputMethodServerDelegateClass</key>
+	<string>VimInputController</string>
+
+	<!-- Input source registration with the Text Services Manager -->
+	<key>TISInputSourceID</key>
+	<string>com.vimkeys.inputmethod</string>
+
+	<key>ComponentInputModeDict</key>
+	<dict>
+		<key>tsInputModeListKey</key>
+		<dict>
+			<key>com.vimkeys.inputmethod</key>
+			<dict>
+				<key>TISInputSourceID</key>
+				<string>com.vimkeys.inputmethod</string>
+				<!-- mul = multiple/all languages -->
+				<key>TISIntendedLanguage</key>
+				<string>mul</string>
+				<key>tsInputModeIsVisibleKey</key>
+				<true/>
+				<key>tsInputModePrimaryInScriptKey</key>
+				<true/>
+			</dict>
+		</dict>
+		<key>tsVisibleInputModeOrderedArrayKey</key>
+		<array>
+			<string>com.vimkeys.inputmethod</string>
+		</array>
+	</dict>
+</dict>
+</plist>

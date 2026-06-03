@@ -1,0 +1,11 @@
+// VimKeys build configuration.
+// Inherits shared compiler settings from Project.xcconfig.
+
+#include "Project.xcconfig"
+
+PRODUCT_BUNDLE_IDENTIFIER = com.vimkeys.inputmethod
+PRODUCT_NAME = $(TARGET_NAME)
+INFOPLIST_FILE = VimKeys/Info.plist
+GENERATE_INFOPLIST_FILE = NO
+GCC_PREFIX_HEADER = VimKeys/src/pch.hpp
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks

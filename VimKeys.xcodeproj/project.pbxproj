@@ -1,0 +1,226 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBBBBBBBBBBBBBBBBBBB0002 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = BBBBBBBBBBBBBBBBBBBB0008 /* main.mm */; };
+		BBBBBBBBBBBBBBBBBBBB0003 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = BBBBBBBBBBBBBBBBBBBB0009 /* AppDelegate.mm */; };
+		BBBBBBBBBBBBBBBBBBBB0004 /* VimInputController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BBBBBBBBBBBBBBBBBBBB000B /* VimInputController.mm */; };
+		BBBBBBBBBBBBBBBBBBBB0005 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBBBBBBBBBBBBBBBBBBB000F /* Cocoa.framework */; };
+		BBBBBBBBBBBBBBBBBBBB0006 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBBBBBBBBBBBBBBBBBBB0010 /* InputMethodKit.framework */; };
+		BBBBBBBBBBBBBBBBBBBB0007 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBBBBBBBBBBBBBBBBBBB0011 /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BBBBBBBBBBBBBBBBBBBB0001 /* VimKeys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VimKeys.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBBBBBBBBBBBBBBBBBBB0008 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		BBBBBBBBBBBBBBBBBBBB0009 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		BBBBBBBBBBBBBBBBBBBB000A /* AppDelegate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AppDelegate.hpp; sourceTree = "<group>"; };
+		BBBBBBBBBBBBBBBBBBBB000B /* VimInputController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VimInputController.mm; sourceTree = "<group>"; };
+		BBBBBBBBBBBBBBBBBBBB000C /* pch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = pch.hpp; sourceTree = "<group>"; };
+		BBBBBBBBBBBBBBBBBBBB000D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBBBBBBBBBBBBBBBBBBB000E /* VimKeys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = VimKeys.xcconfig; sourceTree = "<group>"; };
+		BBBBBBBBBBBBBBBBBBBB000F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BBBBBBBBBBBBBBBBBBBB0010 /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = System/Library/Frameworks/InputMethodKit.framework; sourceTree = SDKROOT; };
+		BBBBBBBBBBBBBBBBBBBB0011 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBBBBBBBBBBBBBBBBBBB0012 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBBBBBBBBBBBBBBBBBBB0005 /* Cocoa.framework in Frameworks */,
+				BBBBBBBBBBBBBBBBBBBB0006 /* InputMethodKit.framework in Frameworks */,
+				BBBBBBBBBBBBBBBBBBBB0007 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBBBBBBBBBBBBBBBBBBB0013 /* <root> */ = {
+			isa = PBXGroup;
+			children = (
+				BBBBBBBBBBBBBBBBBBBB0014 /* VimKeys */,
+				BBBBBBBBBBBBBBBBBBBB0016 /* config */,
+				BBBBBBBBBBBBBBBBBBBB0017 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBBBBBBBBBBBBBBBBBBB0014 /* VimKeys */ = {
+			isa = PBXGroup;
+			children = (
+				BBBBBBBBBBBBBBBBBBBB0015 /* src */,
+				BBBBBBBBBBBBBBBBBBBB000D /* Info.plist */,
+			);
+			path = VimKeys;
+			sourceTree = "<group>";
+		};
+		BBBBBBBBBBBBBBBBBBBB0015 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BBBBBBBBBBBBBBBBBBBB0008 /* main.mm */,
+				BBBBBBBBBBBBBBBBBBBB0009 /* AppDelegate.mm */,
+				BBBBBBBBBBBBBBBBBBBB000A /* AppDelegate.hpp */,
+				BBBBBBBBBBBBBBBBBBBB000B /* VimInputController.mm */,
+				BBBBBBBBBBBBBBBBBBBB000C /* pch.hpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		BBBBBBBBBBBBBBBBBBBB0016 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				BBBBBBBBBBBBBBBBBBBB000E /* VimKeys.xcconfig */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		BBBBBBBBBBBBBBBBBBBB0017 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBBBBBBBBBBBBBBBBBBB0001 /* VimKeys.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBBBBBBBBBBBBBBBBBBB0018 /* VimKeys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBBBBBBBBBBBBBBBBBBB001D /* Build configuration list for PBXNativeTarget "VimKeys" */;
+			buildPhases = (
+				BBBBBBBBBBBBBBBBBBBB001A /* Sources */,
+				BBBBBBBBBBBBBBBBBBBB0012 /* Frameworks */,
+				BBBBBBBBBBBBBBBBBBBB0019 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VimKeys;
+			productName = VimKeys;
+			productReference = BBBBBBBBBBBBBBBBBBBB0001 /* VimKeys.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBBBBBBBBBBBBBBBBBBB001B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = BBBBBBBBBBBBBBBBBBBB001C /* Build configuration list for PBXProject "VimKeys" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBBBBBBBBBBBBBBBBBBB0013;
+			productRefGroup = BBBBBBBBBBBBBBBBBBBB0017 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBBBBBBBBBBBBBBBBBBB0018 /* VimKeys */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBBBBBBBBBBBBBBBBBBB0019 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBBBBBBBBBBBBBBBBBBB001A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBBBBBBBBBBBBBBBBBBB0002 /* main.mm in Sources */,
+				BBBBBBBBBBBBBBBBBBBB0003 /* AppDelegate.mm in Sources */,
+				BBBBBBBBBBBBBBBBBBBB0004 /* VimInputController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BBBBBBBBBBBBBBBBBBBB001E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+			};
+			name = Debug;
+		};
+		BBBBBBBBBBBBBBBBBBBB001F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		BBBBBBBBBBBBBBBBBBBB0020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBBBBBBBBBBBBBBBBBBB000E /* VimKeys.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		BBBBBBBBBBBBBBBBBBBB0021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBBBBBBBBBBBBBBBBBBB000E /* VimKeys.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBBBBBBBBBBBBBBBBBBB001C /* Build configuration list for PBXProject "VimKeys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBBBBBBBBBBBBBBBBBBB001E /* Debug */,
+				BBBBBBBBBBBBBBBBBBBB001F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBBBBBBBBBBBBBBBBBBB001D /* Build configuration list for PBXNativeTarget "VimKeys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBBBBBBBBBBBBBBBBBBB0020 /* Debug */,
+				BBBBBBBBBBBBBBBBBBBB0021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = BBBBBBBBBBBBBBBBBBBB001B /* Project object */;
+}
